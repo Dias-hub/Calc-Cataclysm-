@@ -1,0 +1,46 @@
+﻿@page
+@model IndexModel
+@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8" />
+    <title>TTK Калькулятор</title>
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+    <div class="container">
+        <h1>Project Cataclysm</h1>
+
+        <div class="selectors">
+            <div class="selector">
+                <label for="armorSelect">Выбор брони</label>
+                <select id="armorSelect" class="select-style"></select>
+            </div>
+
+            <div class="selector">
+                <label for="weaponSelect">Выбор оружия</label>
+                <select id="weaponSelect" class="select-style"></select>
+            </div>
+
+            <div class="selector">
+                <label for="ammoSelect">Выбор патрона</label>
+                <select id="ammoSelect" class="select-style"></select>
+            </div>
+        </div>
+
+        <div class="headshot-toggle">
+            <input type="checkbox" id="headshotCheckbox" />
+            <label for="headshotCheckbox">Хедшот (выстрел в голову)</label>
+        </div>
+
+        <hr />
+
+        <div id="result" class="result-box"></div>
+    </div>
+
+    <script src="js/Calc.js"></script>
+</body>
+</html>
