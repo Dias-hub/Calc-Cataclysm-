@@ -12,5 +12,5 @@ FROM mcr.microsoft.com/dotnet/aspnet:8.0 AS final
 WORKDIR /app 
 COPY --from=publish /app/publish .
 ENV ASPNETCORE_URLS=http://+:8080 
-EXPOSE 8080 # Информируем Docker, что приложение слушает порт 8080
+EXPOSE 8080 
 ENTRYPOINT ["dotnet", "CataclysmCalc.dll"] 
